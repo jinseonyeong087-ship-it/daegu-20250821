@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>로그인</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <main class="card" aria-labelledby="title">
+    <h1 id="title">로그인</h1>
+    <p class="sub">이메일과 비밀번호로 로그인하세요.</p>
+
+    <!-- ✅ 로그인 폼 -->
+    <form id="login-form" novalidate>
+      <div id="login-container"></div>
+    </form>
+
+    <p class="badge">모듈: <code>LoginModule</code> (Vanilla JS)</p>
+  </main>
+
+  <!-- ✅ 검증 및 로직 (한 파일로 통합) -->
+  <script src="form.js"></script>
+</body>
+</html>
